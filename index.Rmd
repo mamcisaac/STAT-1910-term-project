@@ -291,6 +291,13 @@ You can get a sense for the requirements of this project phase by reading some e
 * [Example initial project submission 2](static/term_project/resubmission_example_01.html){target="_blank"}
 * [Example initial project submission 3](static/term_project/resubmission_example_02.html){target="_blank"}
 
+Sample code can be found here:
+
+* [Example initial project submission 1](static/term_project/resubmission_example.rmd){target="_blank"}
+* [Example initial project submission 2](static/term_project/resubmission_example_01.rmd){target="_blank"}
+* [Example initial project submission 3](static/term_project/resubmission_example_02.rmd){target="_blank"}
+
+
 In particular, be sure to read the following new sections:
 
 * Sections 3.4, 3.5: Inference for multiple regression
