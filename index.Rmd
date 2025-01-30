@@ -125,7 +125,9 @@ Find a data set that fits the following specifications. Note your data may need 
 Your data must contain
 
 1. (If available) An [identification variable](https://moderndive.com/1-getting-started.html#identification-vs-measurement-variables){target="_blank"} that uniquely identifies each observation in each row. 
-1. A numerical outcome variable $y$. Note: binary outcomes variables with 0/1 values are not technically numerical.
+1. A numerical outcome variable $y$. 
+    + Note 1: binary outcomes variables with 0/1 values are not technically numerical; your outcome must have many different realizations for this project to work (e.g., it can't be a count with only 10 or so unique values).
+    + Note 2: Avoid [compositional data](https://en.wikipedia.org/wiki/Compositional_data), where different outcomes add up to some known total (e.g., looking at proportion on the hot 100 of different genres of music won't work because the observations are not independent: if one genre has 80% of the top songs, then that tells you that another must have less than 20%). 
 1. Two explanatory variables:
     + A numerical explanatory variable $x_1$. Note: this can be some notion of time.
     + A categorical explanatory variable $x_2$ that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.

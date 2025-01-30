@@ -13,7 +13,7 @@
 
 <title>Term Project</title>
 
-<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -469,8 +469,19 @@ href="https://moderndive.com/1-getting-started.html#identification-vs-measuremen
 target="_blank">identification variable</a> that uniquely identifies
 each observation in each row.</li>
 <li>A numerical outcome variable <span class="math inline">\(y\)</span>.
-Note: binary outcomes variables with 0/1 values are not technically
-numerical.</li>
+<ul>
+<li>Note 1: binary outcomes variables with 0/1 values are not
+technically numerical; your outcome must have many different
+realizations for this project to work (e.g., it can’t be a count with
+only 10 or so unique values).</li>
+<li>Note 2: Avoid <a
+href="https://en.wikipedia.org/wiki/Compositional_data">compositional
+data</a>, where different outcomes add up to some known total (e.g.,
+looking at proportion on the hot 100 of different genres of music won’t
+work because the observations are not independent: if one genre has 80%
+of the top songs, then that tells you that another must have less than
+20%).</li>
+</ul></li>
 <li>Two explanatory variables:
 <ul>
 <li>A numerical explanatory variable <span
@@ -713,9 +724,9 @@ target="_blank">Example initial project submission 3</a></li>
 </ul>
 <p>Sample code can be found here:</p>
 <ul>
-<li><a href="static/term_project/resubmission_example_01.Rmd" download><code>Example initial project submission 1</code></a></li>
-<li><a href="static/term_project/resubmission_example_02.Rmd" download><code>Example initial project submission 2</code></a></li>
-<li><a href="static/term_project/resubmission_example_03.Rmd" download><code>Example initial project submission 3</code></a></li>
+<li><a href="static/term_project/resubmission_example.Rmd" download><code>Example initial project submission 1</code></a></li>
+<li><a href="static/term_project/resubmission_example_01.Rmd" download><code>Example initial project submission 2</code></a></li>
+<li><a href="static/term_project/resubmission_example_02.Rmd" download><code>Example initial project submission 3</code></a></li>
 </ul>
 <p>In particular, be sure to read the following new sections:</p>
 <ul>
